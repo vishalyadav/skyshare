@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	background: url("../bg.jpg") no-repeat center center fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#title {
+	width: 100%;
+	position: relative;
+	top: 20px;
+	font-family: 'Bubbler One', sans-serif;
+	font-size: 70px;
+	color: #094AA2;
+	text-align: center;
+}
+
+#login {
+	position: relative;
+	top: 120px;
+	width: 100%;
+}
+
+input {
+	font-size: 18px;
+	position: relative;
+	left: 100px;
+	text-align: right;
+}
+
+#main_main {
+	position: relative;
+	width: 400px;
+	margin: 130px auto;
+	height: 300px;
+	z-index: 5;
+}
+
+#main_box {
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+	height: 300px;
+	background-color: #aaa;
+	opacity: .6;
+	z-index: 1;
+}
+
+#submit {
+	position: relative;
+	left: 175px;
+	display: none;
+}
+
+#user, #password {
+	display: none;
+}
+
+#code {
+	font-size: 26px;
+	top: -60px;
+	left: 65px;
+}
+
+#submit_code {
+	position: relative;
+	left: -120px;
+	top: 15px;
+	border: 1px solid #006;
+	border-radius: 999px;
+	padding: 5px 20px 5px 20px;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a1cb), color-stop(100%, #5075CB));
+	background: -webkit-linear-gradient(top, #00a1cb, #5075CB);
+	background: -moz-linear-gradient(top, #00a1cb, #5075CB);
+	background: -o-linear-gradient(top, #00a1cb, #5075CB);
+	background: linear-gradient(top, #00a1cb, #5075CB);
+	border-color: #007998;
+	color: #FFFFFF;
+}
+
+#submit_code:hover {
+	cursor: pointer;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5EDCFB), color-stop(100%, #5075CB));
+	background: -webkit-linear-gradient(top, #1EB9DF, #5075CB);
+	background: -moz-linear-gradient(top, #5EDCFB, #5075CB);
+	background: -o-linear-gradient(top, #5EDCFB, #5075CB);
+	background: linear-gradient(top, #5EDCFB, #5075CB);
+}
+
+
