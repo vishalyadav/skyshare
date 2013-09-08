@@ -35,26 +35,22 @@
 
 	if($stmt === false)
 	{
-		echo "wrong";
+		echo "Incorrect code";
 	    die(print_r(sqlsrv_errors(), true));
 	}
 
-	$rows_present = false;
+	/*$rows_present = false;
 	$row = $stmt->fetch();
 
 	if(strlen($row) > 0) {
 		echo(strlen($row));
 		$rows_present = true;
-	}
+	}*/
 
-	while ( $row ){
+	while ( $row = $stmt->fetch() ){
 		echo "$row\n";
-		$row = $stmt->fetch();
 	}
 
-	if($rows_present == true) {
-		echo "screwed up homie";
-	}
 
 
 
