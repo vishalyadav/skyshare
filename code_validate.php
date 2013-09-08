@@ -41,8 +41,7 @@
 	$rows_present = false;
 	$row = $stmt->fetch();
 
-	if($row == true) {
-		echo($row);
+	if(strlen($row) > 0) {
 		$rows_present = true;
 	}
 
