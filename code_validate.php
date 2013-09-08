@@ -35,10 +35,25 @@
 
 	if($stmt === false)
 	{
-	      die(print_r(sqlsrv_errors(), true));
+	    die(print_r(sqlsrv_errors(), true));
 	}
 
-	while ( $row = $stmt->fetch() ){
-	   echo "$row\n";
+	bool $rows_present = false;
+	$row = $stmt->fetch();
+
+	if($row) {
+		$rows_present = true;
 	}
+
+	while ( $row ){
+		echo "$row\n";
+		$row = $stmt->fetch();
+	}
+
+	if(!$rows_present) {
+		echo "screwed up homie";
+	}
+
+
+
 ?>
