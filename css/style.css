@@ -70,7 +70,7 @@ input {
 	width: 400px;
 	left: 50%;
 	margin-left: -200px;
-	height: 300px;
+	height: 270px;
 	background-color: #aaa;
 	opacity: .6;
 	z-index: 1;
@@ -116,5 +116,12 @@ input {
 	background: -o-linear-gradient(top, #5EDCFB, #5075CB);
 	background: linear-gradient(top, #5EDCFB, #5075CB);
 }
+
+
+
+
+
+
+
 
 
