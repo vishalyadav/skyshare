@@ -79,6 +79,10 @@
 		    WL.ui({ name: "signin", element: "signin" });
 
 		</script>
+		<form name="longurl" id="longurl" method="post" action="">
+			<input type="text" placeholder="Paste last url here" id="dumburl" name="dumburl"></input>
+			<input type="submit" id="submit_url" name="submit_url"></input>
+		</form>
 	</div>
 </body>
 </html>
