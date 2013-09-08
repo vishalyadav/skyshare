@@ -16,7 +16,11 @@
 			SkyShare
 		</div>
 		<?php
-			echo $_POST["code"];
+			if(isset($_POST["code"]) == false) {
+				echo "lord";
+			} else {
+				echo $_POST["code"];
+			}
 		?>
 	</div>
 </body>
