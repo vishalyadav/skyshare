@@ -25,7 +25,7 @@
 	</div>
 
 	<?php
-		function code_validate() {
+		//function code_validate() {
 			$code = $_POST["code"];
 			$server = "tuqhxl05rd.database.windows.net,1433";
 			$username = "ashish@tuqhxl05rd";
@@ -46,14 +46,15 @@
 			{
 				echo "Incorrect code";
 			    die(print_r(sqlsrv_errors(), true));
+			} else {
+				while ( $row = $stmt->fetch() ){
+					echo "$row\n";
+				}
+		//}
+		//code_validate();
+				header('Location: sendfiles.php');
 			}
-
-			while ( $row = $stmt->fetch() ){
-				echo "$row\n";
-			}
-		}
-		code_validate();
-
+		
 	?>
 
 </body>
