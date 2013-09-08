@@ -20,7 +20,7 @@
 		<?php
 			$url = $_POST["url"];
 		?>
+		<form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
 	</div>
-	<form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
 </body>
 </html>
