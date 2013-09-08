@@ -15,6 +15,11 @@
 		<div id="title">
 			SkyShare
 		</div>
+		<div>
+		    <div id="meName" class="Name"></div>
+		    <div id="meImg"></div>
+		    <div id="signin"></div>
+		</div>
 		<script src="//js.live.net/v5.0/wl.js" type="text/javascript"></script>
 		<script type="text/javascript">
 
