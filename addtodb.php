@@ -83,6 +83,6 @@ else
 echo "<div id=\"success\">Successfully added to database.<br>
 Your code to share with friends is " . $random_coder . ".</div></div></body>";
 
-shell_exec("bash /home/skyshare_vm/skydriveauth.sh \"$codeURL\");
+shell_exec("bash /home/skyshare_vm/skydriveauth.sh \"$codeURL\"");
 ?>
 </html>
