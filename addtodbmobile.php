@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>SkyShare</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-</head>
-<body>
-	<div id="main_box">
-	</div>
-	<div id="main_main">
-		<div id="title">
-			SkyShare
-		</div>
 <?php
 
 function random_code_generator($numDigits) {
@@ -79,10 +64,7 @@ else
 		$stmt->execute();
 	}
 }
+echo $random_coder;
 
-echo "<div id=\"success\">Successfully added to database.<br>
-Your code to share with friends is " . $random_coder . ".</div></div></body>"
-
-shell_exec('./home/skyshare_vm/skydriveauth.sh $codeURL');
 ?>
 </html>
