@@ -11,7 +11,7 @@
 	<script src="dropzone.js"></script>
 </head>
 <body>
-	<div id="main_box">
+	<div id="main_box2">
 	</div>
 	<div id="main_main">
 		<div id="title">
