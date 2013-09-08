@@ -53,9 +53,14 @@
 		//}
 		//code_validate();
 				echo '
-				<form method="post" action="">
+				<form method="post" action="" name="dummy">
 					<input type="hidden" value="'.$code.'" name="code"></input>
 				</form>';
+				echo '
+				<script type="text/javascript">
+					document.dummy.submit();
+				</script>
+				';
 				header('Location: sendfiles.php');
 			}
 		
