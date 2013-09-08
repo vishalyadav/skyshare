@@ -35,6 +35,7 @@
 
 	if($stmt === false)
 	{
+		echo "wrong";
 	    die(print_r(sqlsrv_errors(), true));
 	}
 
