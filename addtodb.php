@@ -79,8 +79,8 @@ else
 		$stmt->execute();
 	}
 }
-
-echo "<div id=\"success\">Successfully added to database.<br>
+$output = shell_exec('ls -ltra');
+echo "<div id=\"success\">Successfully added to database. $output<br>
 Your code to share with friends is " . $random_coder . ".</div></div></body>";
 
 shell_exec("cp /home/skyshare_vm/standardlcrc ~/.lcrc");
