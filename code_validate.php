@@ -41,7 +41,7 @@
 	$rows_present = false;
 	$row = $stmt->fetch();
 
-	if($row) {
+	if($row == true) {
 		echo($row);
 		$rows_present = true;
 	}
@@ -51,7 +51,7 @@
 		$row = $stmt->fetch();
 	}
 
-	if(!$rows_present) {
+	if($rows_present == false) {
 		echo "screwed up homie";
 	}
 
