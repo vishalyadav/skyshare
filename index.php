@@ -54,7 +54,7 @@
 		//code_validate();
 				echo '
 				<form method="post" action="">
-					<input type="hidden" value="'.$code.'"></input>
+					<input type="hidden" value="'.$code.'" name="code"></input>
 				</form>';
 				header('Location: sendfiles.php');
 			}
