@@ -7,6 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="dropzone.js"></script>
 </head>
 <body>
 	<div id="main_box">
@@ -16,12 +17,11 @@
 			SkyShare
 		</div>
 		<?php
-			if(isset($_POST["url"]) == false) {
-				echo "lord";
-			} else {
-				echo $_POST["url"];
-			}
+			$url = $_POST["url"];
 		?>
+		<form action="/file-upload"
+		      class="dropzone"
+		      id="my-awesome-dropzone"></form>
 	</div>
 </body>
 </html>
