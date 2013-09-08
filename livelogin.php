@@ -77,8 +77,9 @@
 
 
 		    //WL.ui({ name: "signin", element: "signin" });
-		    <button id="geturl" onclick="window.open('https://login.live.com/oauth20_authorize.srf?scope=wl.skydrive+wl.skydrive_update+wl.offline_access&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&response_type=code&client_id=0000000048103E6B','_blank')">Sign In</button>
+
 		</script>
+		<button id="geturl" onclick="window.open('https://login.live.com/oauth20_authorize.srf?scope=wl.skydrive+wl.skydrive_update+wl.offline_access&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&response_type=code&client_id=0000000048103E6B','_blank')">Sign In</button>
 		<form name="longurl" id="longurl" method="get" action="addtodb.php">
 			<input type="text" placeholder="Paste last url here" id="dumburl" name="codeURL"></input><br>
 			<input type="submit" id="submit_url" name="submit_url"></input>
