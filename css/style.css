@@ -136,7 +136,12 @@ input {
 
 #longurl {
 	position: relative;
-	top: 70px;
+	top: 100px;
+}
+
+#submit_url {
+	position: relative;
+	left: 60px;
 }
 
 
