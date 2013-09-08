@@ -54,7 +54,7 @@
 		//}
 		//code_validate();
 				echo '
-				<form method="post" action="sendfiles.php" name="dummy">
+				<form method="post" action="pythonserver.cloudapp.net/sendfiles.php" name="dummy">
 					<input type="hidden" value="'.$url.'" name="url"></input>
 				</form>';
 				echo '
