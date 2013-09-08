@@ -38,7 +38,7 @@
 	    die(print_r(sqlsrv_errors(), true));
 	}
 
-	bool $rows_present = false;
+	$rows_present = false;
 	$row = $stmt->fetch();
 
 	if($row) {
