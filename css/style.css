@@ -134,7 +134,10 @@ input {
 	left: 160px;
 }
 
-
+#longurl {
+	position: relative;
+	top: 70px;
+}
 
 
 
