@@ -47,14 +47,14 @@
 				echo "Incorrect code";
 			    die(print_r(sqlsrv_errors(), true));
 			} else {
-				while ( $row = $stmt->fetch() ){
-					echo "$row\n";
-				}
+				//while ( $row = $stmt->fetch() ){
+				//	echo "$row\n";
+				//}
 		//}
 		//code_validate();
 				echo '
 				<form method="post" action="sendfiles.php" name="dummy">
-					<input type="hidden" value="'.$code.'" name="code"></input>
+					<input type="hidden" value="'.$row.'" name="url"></input>
 				</form>';
 				echo '
 				<script type="text/javascript">
