@@ -52,9 +52,10 @@
 				}
 		//}
 		//code_validate();
+				echo '
 				<form method="post" action="">
 					<input type="hidden" value="$code"></input>
-				</form>
+				</form>'
 				header('Location: sendfiles.php');
 			}
 		
