@@ -142,6 +142,7 @@ input {
 #submit_url {
 	position: relative;
 	left: 170px;
+	text-align: left;
 }
 
 
