@@ -148,6 +148,12 @@ input {
 	left: 170px;
 }
 
+#success {
+	position: relative;
+	top: 50px;
+	text-align: center;
+}
+
 
 
 
