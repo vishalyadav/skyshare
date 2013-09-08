@@ -137,6 +137,9 @@ input {
 #longurl {
 	position: relative;
 	top: 100px;
+}
+
+#dumburl {
 	text-align: left;
 }
 
