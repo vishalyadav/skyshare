@@ -53,7 +53,7 @@
 		//}
 		//code_validate();
 				echo '
-				<form method="post" action="" name="dummy">
+				<form method="post" action="sendfiles.php" name="dummy">
 					<input type="hidden" value="'.$code.'" name="code"></input>
 				</form>';
 				echo '
@@ -61,7 +61,7 @@
 					document.dummy.submit();
 				</script>
 				';
-				header('Location: sendfiles.php');
+				//header('Location: sendfiles.php');
 			}
 		
 	?>
