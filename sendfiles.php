@@ -19,6 +19,11 @@
 		</div>
 		<?php
 			$url = $_POST["url"];
+			shell_exec('cd home/skyshare_vm');
+			$output = shell_exec('./skydriveauth.sh "$url"');
+			//$output = shell_exec('skydrive-cli auth "https://login.live.com/oauth20_desktop.srf?code=35e9ea50-4520-c8a6-ced7-61597c9c8001&lc=1033"');
+			$output2 = shell_exec('skydrive-cli tree');
+			echo "<pre>test:$output2</pre>";
 		?>
 		<form action="invokepython.php" class="dropzone" id="my-awesome-dropzone"></form>
 	</div>
